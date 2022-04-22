@@ -12,3 +12,46 @@ body{
     min-height: 100vh;
     background-color: aqua;
 }
+
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: bisque;
+    width: 50%;
+    max-height: 60px;
+    overflow-y: hidden;
+    margin-bottom: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box::after {
+    content: "\002B";
+    float: right;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.active::after {
+    font-weight: bold;
+    content: "\2212";
+}
+
+
+.block{
+    width: 50%;
+    max-height: 0px;
+    background-color: black;
+    color: #fff;
+    margin: 0 auto;
+    overflow-y: hidden;
+    transition: 0.4s ease-in-out;
+}
+
+.block p{
+    padding: 10px;
+    font-weight: bold;
+}
