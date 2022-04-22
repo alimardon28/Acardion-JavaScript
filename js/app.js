@@ -1,24 +1,16 @@
-let box=document.querySelectorAll(".box");
-let block=document.querySelector(".block");
+let box = document.querySelectorAll(".box");
+let block = document.querySelector(".block");
 
+box.forEach((item) => {
+  let block = item.nextElementSibling;
 
-box.forEach(item =>{
+  item.addEventListener("click", () => {
+    item.classList.toggle("active");
 
-    let block = item.nextElementSibling;
-
-
-    item.addEventListener("click", () =>{
-
-      item.classList.toggle('active');
-
-        if(block.style.maxHeight){
-
-        block.style.maxHeight = null;
-
-    }else{
-        block.style.maxHeight = block.scrollHeight + "px";
-
+    if (block.style.maxHeight) {
+      block.style.maxHeight = null;
+    } else {
+      block.style.maxHeight = block.scrollHeight + "px";
     }
-  })
-
-})
+  });
+});
