@@ -50,9 +50,31 @@ body{
     margin: 0 auto;
     overflow-y: hidden;
     transition: 0.4s ease-in-out;
+    opacity: 0.8;
 }
 
 .block p{
     padding: 10px;
     font-weight: bold;
+}
+
+.html{
+    background-image: url(../images/html.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.css{
+    background-image: url(../images/CSSTutorial.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.javascript{
+    background-image: url(../images/javascript.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
